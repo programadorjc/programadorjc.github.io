@@ -1,0 +1,406 @@
+/* Estilos gerais para o corpo da página */
+body {
+    /* background-color: black; */
+    /* Cor de fundo preta (comentada no seu CSS) */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Fonte padrão para o texto */
+    color: rgb(3, 30, 182);
+    /* Cor do texto principal */
+    /* color: white; */
+    /* Cor do texto branco (comentada no seu CSS) */
+    font-size: 20px;
+    /* Tamanho da fonte padrão */
+    margin: 0;
+    /* Remove as margens padrão do body */
+    display: flex;
+    /* Ativa o modelo de layout flexível para o body */
+    flex-direction: column;
+    /* Organiza os filhos do body em coluna */
+    align-items: center;
+    /* Centraliza os itens horizontalmente no body */
+    min-height: 100vh;
+    /* Garante que o body ocupe pelo menos a altura total da viewport */
+    box-sizing: border-box;
+    /* Inclui padding e border na largura e altura total do elemento */
+}
+
+/* Estilos para o cabeçalho da página */
+header {
+    background-color: rgb(15, 15, 15);
+    /* Cor de fundo do cabeçalho */
+    color: #0a0a0a;
+    /* Cor do texto no cabeçalho */
+    padding: 20px 0;
+    /* Espaçamento interno superior e inferior do cabeçalho */
+    width: 100%;
+    /* O cabeçalho ocupa a largura total da tela */
+    box-sizing: border-box;
+    /* Inclui padding e border na largura total */
+}
+
+/* Estilos para a lista de navegação no cabeçalho */
+header nav ul {
+    color: white;
+    /* Cor do texto dos links de navegação */
+    list-style-type: none;
+    /* Remove os marcadores de lista */
+    margin: 0;
+    /* Remove as margens padrão da lista */
+    padding: 0;
+    /* Remove o preenchimento padrão da lista */
+    text-align: center;
+    /* Centraliza o texto dos itens da lista */
+}
+
+/* Estilos para cada item da lista de navegação */
+header nav ul li {
+    display: inline;
+    /* Exibe os itens da lista em linha horizontal */
+    margin: 0 15px;
+    /* Espaçamento horizontal entre os itens da lista */
+}
+
+/* Estilos para os links de navegação */
+header nav ul li a {
+    color: #f0e6e6;
+    /* Cor do texto dos links */
+    text-decoration: none;
+    /* Remove o sublinhado padrão dos links */
+}
+
+/* Estilos para a seção principal do conteúdo */
+main {
+    padding: 20px;
+    /* Espaçamento interno ao redor do conteúdo principal */
+    text-align: center;
+    /* Centraliza o texto dentro da seção principal */
+    width: 90%;
+    /* Largura da seção principal */
+    max-width: 1200px;
+    /* Largura máxima da seção principal */
+    box-sizing: border-box;
+    /* Inclui padding e border na largura total */
+    flex-grow: 1;
+    /* Permite que a main cresça para ocupar o espaço restante */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para o rodapé da página */
+footer {
+    background-color: #0f0f0f;
+    /* Cor de fundo do rodapé */
+    color: white;
+    /* Cor do texto no rodapé */
+    text-align: center;
+    /* Centraliza o texto no rodapé */
+    padding: 10px 0;
+    /* Espaçamento interno superior e inferior do rodapé */
+    position: fixed;
+    /* Fixa o rodapé na parte inferior da tela */
+    bottom: 0;
+    /* Alinha o rodapé à parte inferior */
+    width: 100%;
+    /* O rodapé ocupa a largura total da tela */
+    flex-direction: column;
+    /* Organiza os itens do footer em coluna */
+    box-sizing: border-box;
+    /* Inclui padding e border na largura total */
+}
+
+/* Estilos para o formulário */
+form {
+    display: inline-block;
+    /* Exibe o formulário como um bloco em linha */
+    margin-top: 10px;
+    /* Espaçamento superior do formulário */
+}
+
+/* Estilos para as labels do formulário */
+form label {
+    width: 100%;
+    /* A label ocupa a largura total do seu container */
+    max-width: 500px;
+    /* Largura máxima da label */
+    display: block;
+    /* Faz com que cada label ocupe uma linha separada */
+    margin-bottom: 5px;
+    /* Espaçamento inferior da label */
+    text-align: left;
+    /* Alinha o texto da label à esquerda */
+}
+
+/* Estilos para a textarea do formulário */
+form textarea {
+    width: 100%;
+    /* A textarea ocupa a largura total do seu container */
+    max-width: 500px;
+    /* Largura máxima da textarea */
+    padding: 10px;
+    /* Espaçamento interno da textarea */
+    border: 1px solid #ccc;
+    /* Borda da textarea */
+    border-radius: 4px;
+    /* Borda arredondada da textarea */
+    box-sizing: border-box;
+    /* Inclui padding e border na largura total */
+}
+
+/* Estilos para as seções genéricas */
+section {
+    margin: 20px 0;
+    /* Espaçamento vertical entre as seções */
+    width: 90%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Estilos para o container flexível */
+.container {
+    display: flex;
+    /* Ativa o modelo de layout flexível */
+    flex-wrap: wrap;
+    /* Permite que os itens quebrem para a próxima linha se não houver espaço */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+}
+
+/* Estilos para os itens dentro do container flexível */
+.item {
+    background-color: #f0f0f0;
+    /* Cor de fundo dos itens */
+    padding: 20px;
+    /* Espaçamento interno dos itens */
+    margin: 10px;
+    /* Espaçamento ao redor dos itens */
+    flex: 1 1 300px;
+    /* Define como os itens devem crescer e encolher (largura base de 300px) */
+    text-align: center;
+    /* Centraliza o texto dentro dos itens */
+    border-radius: 8px;
+    /* Borda arredondada dos itens */
+    box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave dos itens */
+}
+
+/* Estilos para a imagem de perfil */
+#profile {
+    width: 150px;
+    /* Largura da imagem de perfil */
+    border-radius: 50%;
+    /* Faz a imagem ficar circular */
+    display: block;
+    /* Remove o espaço extra abaixo da imagem */
+    margin: 20px auto;
+    /* Centraliza a imagem horizontalmente e adiciona margem vertical */
+}
+
+/* Estilos para a tabela de projetos */
+#table-projetos {
+    width: 90%;
+    /* Largura da tabela */
+    max-width: 800px;
+    /* Largura máxima da tabela */
+    text-align: center;
+    /* Centraliza o texto na tabela */
+    border-collapse: collapse;
+    /* Colapsa as bordas da tabela */
+    margin: 20px auto;
+    /* Centraliza a tabela horizontalmente e adiciona margem vertical */
+}
+
+#table-projetos th,
+#table-projetos td {
+    border: 1px solid #ddd;
+    /* Adiciona borda às células da tabela */
+    padding: 8px;
+    /* Espaçamento interno das células da tabela */
+}
+
+#table-projetos th {
+    background-color: #f2f2f2;
+    /* Cor de fundo do cabeçalho da tabela */
+}
+
+/* Estilos para botões */
+.button {
+    display: inline-block;
+    /* Exibe o botão como um bloco em linha */
+    border-radius: 8px;
+    /* Borda arredondada do botão */
+    background-color: black;
+    /* Cor de fundo do botão */
+    border: none;
+    /* Remove a borda padrão do botão */
+    color: #ccc;
+    /* Cor do texto do botão */
+    text-align: center;
+    /* Centraliza o texto no botão */
+    font-size: 28px;
+    /* Tamanho da fonte do botão */
+    padding: 10px;
+    /* Espaçamento interno do botão */
+    width: 200px;
+    /* Largura do botão */
+    transition: all 0.5s;
+    /* Adiciona uma transição suave para todas as propriedades */
+    cursor: pointer;
+    /* Muda o cursor para indicar que é clicável */
+    margin: 5px;
+    /* Espaçamento ao redor do botão */
+    text-decoration: none;
+    /* Remove o sublinhado (caso seja usado em um link) */
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    /* Caractere Unicode para a seta dupla para a direita */
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* Estilos para links */
+a:link,
+a:visited {
+    background-color: black;
+    /* Cor de fundo do link */
+    color: #ccc;
+    /* Cor do texto do link */
+    padding: 10px 20px;
+    /* Espaçamento interno do link */
+    text-align: center;
+    /* Centraliza o texto do link */
+    text-decoration: none;
+    /* Remove o sublinhado do link */
+    display: inline-block;
+    /* Exibe o link como um bloco em linha */
+    border-radius: 5px;
+    /* Borda arredondada dos links */
+}
+
+a {
+    margin: 5px;
+    /* Espaçamento ao redor dos links */
+}
+
+a:hover,
+a:active {
+    background-color: rgb(39, 80, 117);
+    /* Cor de fundo do link ao passar o mouse ou clicar */
+    color: rgb(226, 205, 18);
+    /* Cor do texto do link ao passar o mouse ou clicar */
+}
+
+/* Estilos para a seção de habilidades em destaque */
+.habilidades-destaque {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos para a lista de habilidades em destaque */
+.habilidades-lista-destaque {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Estilos para cada box de habilidade em destaque */
+.habilidade-box-destaque {
+    background-color: #222;
+    /* Cor de fundo dos boxes de habilidade */
+    color: white;
+    /* Cor do texto nos boxes de habilidade */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex-basis: calc(33.33% - 40px);
+    /* Aproximadamente um terço da largura, subtraindo o espaçamento */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+    /* Sombra para destacar os boxes */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Transição suave para o efeito hover */
+    box-sizing: border-box;
+}
+
+/* Estilos para o efeito hover nos boxes de habilidade */
+.habilidade-box-destaque:hover {
+    transform: translateY(-5px);
+    /* Leve deslocamento para cima ao passar o mouse */
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.9);
+    /* Sombra mais pronunciada no hover */
+}
+
+/* Estilos para o título dentro dos boxes de habilidade */
+.habilidade-box-destaque h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #eee;
+}
+
+/* Estilos para a seção de contatos no rodapé */
+.contatos-meus {
+    margin-top: 30px;
+    /* Espaçamento superior da seção de contatos */
+    background-color: #494848;
+    /* Cor de fundo da seção de contatos */
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    /* Centraliza os ícones horizontalmente */
+    align-items: center;
+    /* Centraliza os ícones verticalmente */
+    gap: 20px;
+    /* Espaçamento entre os ícones */
+}
+
+.contatos-meus a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Responsividade para a seção de habilidades */
+@media (max-width: 768px) {
+    .habilidade-box-destaque {
+        flex-basis: calc(50% - 20px);
+        /* Metade da largura em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .habilidade-box-destaque {
+        flex-basis: 100%;
+        /* Largura total em telas muito pequenas */
+    }
+}
