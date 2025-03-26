@@ -108,6 +108,20 @@ footer {
     box-sizing: border-box;
     /* Inclui padding e border na largura total */
 }
+  @media (max-width: 600px) {
+    .navbar {
+      position: static;
+      width: 100%;
+      height: auto;
+      flex-direction: row; /* Menu horizontal em telas menores */
+      justify-content: space-around; /* Distribui os itens */
+    }
+
+    .navbar a {
+      padding: 10px;
+      margin: 0; /* Ajusta espaçamento em links menores */
+    }
+  }
 
 /* Estilos para o formulário */
 form {
