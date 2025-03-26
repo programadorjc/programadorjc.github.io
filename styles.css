@@ -126,17 +126,43 @@ main {
     }
   }
 
+  
   footer {
     background-color: #0f0f0f;
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
     width: 100%;
-    box-sizing: border
+    box-sizing: border-box; /* Corrigido: border-box */
+    display: flex;
+    flex-direction: row; /* Links em linha por padrão */
+    justify-content: center; /* Centraliza os itens */
+    align-items: center; /* Alinha verticalmente */
+    flex-wrap: wrap; /* Permite quebra em telas pequenas */
   }
 
+  footer a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+    padding: 5px;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    footer {
+      flex-direction: column; /* Links em coluna para telas menores */
+      justify-content: center;
+      align-items: center;
+    }
+
+    footer a {
+      margin: 5px 0; /* Ajusta o espaçamento dos links */
+    }
+  }
 /* Estilos para o formulário */
 form {
     display: inline-block;
@@ -423,6 +449,10 @@ a:active {
     .habilidade-box-destaque {
         flex-basis: calc(50% - 20px);
         /* Metade da largura em telas menores */
+    }
+
+    {
+     
     }
 }
 
